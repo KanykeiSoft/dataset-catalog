@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DatasetApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7cd80af8168f5a216536e835ca0df0f808b70df8")]
 [assembly: System.Reflection.AssemblyProductAttribute("DatasetApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DatasetApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

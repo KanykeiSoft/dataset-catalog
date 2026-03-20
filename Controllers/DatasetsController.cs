@@ -8,32 +8,9 @@ namespace DatasetApi.Controllers
     public class DatasetsController : ControllerBase
     {
         [HttpGet]
-        public IActionResult Get()
+        public ActionResult<List<Dataset>> Get()
         {
-            var datasets = new List<Dataset>
-            {
-                new Dataset 
-                { 
-                    Id = 1, 
-                    Name = "Sales Data", 
-                    Domain = "Finance",
-                    AiInsight = "Useful for revenue tracking and financial forecasting."
-                },
-                new Dataset 
-                { 
-                    Id = 2, 
-                    Name = "Customer Info", 
-                    Domain = "Marketing",
-                    AiInsight = "Helps analyze customer behavior and marketing performance."
-                },
-                new Dataset 
-                { 
-                    Id = 3, 
-                    Name = "Product Metrics", 
-                    Domain = "Product",
-                    AiInsight = "Supports product performance and user engagement insights."
-                }
-            };
+            var datasets = new List<Dataset>(); // пустой список по заданию
 
             return Ok(datasets);
         }

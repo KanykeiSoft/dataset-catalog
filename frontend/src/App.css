@@ -5,123 +5,126 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #f4f7fb;
-  color: #1f2937;
-}
-
-#root {
-  width: 100%;
+  background: #f3f4f6;
+  color: #111827;
 }
 
 .page {
-  min-height: 100vh;
-  padding: 40px 20px;
+  padding: 32px 16px;
 }
 
 .container {
   max-width: 1000px;
   margin: 0 auto;
+  background: #ffffff;
+  padding: 32px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
 }
 
 h1 {
-  margin: 0;
-  font-size: 48px;
+  margin: 0 0 24px;
   text-align: center;
+  font-size: 40px;
+  color: #1f2937;
+}
+
+.dataset-form {
+  display: grid;
+  gap: 14px;
+  margin-bottom: 24px;
+}
+
+.dataset-form h2 {
+  margin: 0;
+  font-size: 24px;
+  color: #374151;
+  text-align: center;
+}
+
+.dataset-form input,
+.dataset-form select,
+.controls select {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  font-size: 15px;
+  background: #ffffff;
   color: #111827;
 }
 
-.subtitle {
-  text-align: center;
-  color: #6b7280;
-  margin-top: 12px;
-  margin-bottom: 32px;
+.dataset-form input::placeholder {
+  color: #9ca3af;
+}
+
+.dataset-form button {
+  width: fit-content;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 10px;
+  background: #2563eb;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.dataset-form button:hover {
+  background: #1d4ed8;
 }
 
 .controls {
   display: flex;
   gap: 12px;
-  justify-content: center;
-  margin-bottom: 20px;
-  flex-wrap: wrap;
+  margin-bottom: 24px;
 }
 
-.controls input::placeholder {
-  color: #9ca3af;
-}
-
-.controls input,
 .controls select {
-  padding: 12px 14px;
-  border: 1px solid #d1d5db;
-  border-radius: 10px;
-  font-size: 16px;
+  max-width: 220px;
+}
+
+.dataset-table {
+  width: 100%;
+  border-collapse: collapse;
   background: white;
- color: #111827;
 }
 
-.controls input {
-  width: 320px;
-}
-
-.results-count {
-  margin-bottom: 20px;
-  color: #6b7280;
-  text-align: center;
-}
-
-.card-grid {
-  display: grid;
-  gap: 18px;
-}
-
-.card {
-  background: white;
-  border-radius: 16px;
-  padding: 24px;
+.dataset-table th,
+.dataset-table td {
   border: 1px solid #e5e7eb;
-  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+  padding: 14px;
+  text-align: left;
 }
 
-.card h2 {
-  margin-top: 12px;
-  margin-bottom: 12px;
-  font-size: 28px;
+.dataset-table th {
+  background: #f9fafb;
+  color: #374151;
+  font-weight: 700;
+}
+
+.dataset-table td {
   color: #111827;
 }
 
-.card p {
-  margin: 8px 0;
-  color: #374151;
-}
-
-.badge {
-  display: inline-block;
-  background: #e0ecff;
-  color: #1d4ed8;
-  padding: 6px 10px;
-  border-radius: 999px;
-  font-size: 14px;
-  font-weight: 600;
-}
-
 .insight-box {
-  margin-top: 16px;
-  padding: 14px;
-  background: #f9fafb;
-  border-left: 4px solid #3b82f6;
-  border-radius: 10px;
-  color: #374151;
+  background: #fff7ed;
+  border: 1px solid #fdba74;
+  padding: 10px 12px;
+  border-radius: 8px;
+  color: #9a3412;
+  font-size: 14px;
 }
-
-.empty-state {
-  text-align: center;
-  background: white;
-  padding: 24px;
-  border-radius: 16px;
-  border: 1px solid #e5e7eb;
-  color: #6b7280;
+.form-error {
+  margin: 10px 0;
+  color: #b42318;
+  background: #fef3f2;
+  border: 1px solid #fecdca;
+  padding: 10px 12px;
+  border-radius: 8px;
+  font-size: 14px;
 }
-.card:hover {
-  transform: translateY(-4px);
-  transition: 0.2s;
+.insight-row td {
+  padding: 6px 14px 10px;
+  border-top: none;
 }
