@@ -66,3 +66,5 @@ AI tools (ChatGPT) were used to:
 - Assist with component structure
 - Help with TypeScript typing
 - Improve code clarity and validation logic
+
+ All code was reviewed, understood, and adjusted where necessary.
